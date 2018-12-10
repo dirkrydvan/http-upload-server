@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /upload
+RewriteRule ^/?(api)/? put.php [NC]
+RewriteCond %{REQUEST_METHOD} (PUT|DELETE)
+RewriteRule .* put.php
