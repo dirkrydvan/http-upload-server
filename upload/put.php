@@ -3,7 +3,7 @@ function write_log($txt) {
   file_put_contents("put_log.txt", $txt);
   chmod("put_log.txt", 0666);
 }
-set_include_path('/var/www/html');
+set_include_path('/opt/app-root/src');
 #require 'dauth.php';
 // customize the following defines:-
 define('AUTH_REALM', 'myserver/mydirectory');
@@ -34,7 +34,7 @@ $status</title></head><body>$body</body></html>");
 
 function putfile() {
   $f = pathinfo($fname = $_SERVER['REQUEST_URI']);
-  $f = fopen("/var/www/html/files/".$fname = $f['basename'], 'w');
+  $f = fopen("/opt/app-root/src/files/".$fname = $f['basename'], 'w');
   if (!$f) puterror('409 Create error', "Couldn't create file");
   $s = fopen('php://input', 'r'); // read from standard input
   if (!$s) puterror('404 Input Unavailable', "Couldn't open input");
