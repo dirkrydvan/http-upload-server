@@ -16,7 +16,8 @@ $auth_users = array(
 );
 // Readonly users (username array)
 $readonly_users = array(
-    'user'
+    'user',
+    'admin'
 );
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
@@ -43,7 +44,9 @@ $datetime_format = 'd.m.y H:i';
 // allowed file extensions for upload and rename
 $allowed_extensions = ''; // 'gif,png,jpg'
 // Array of files and folders excluded from listing
-$GLOBALS['exclude_items'] = array(index.php);
+$GLOBALS['exclude_items'] = array(
+    'index.php'
+);
 // Google Docs Viewer
 $GLOBALS['online_viewer'] = true;
 //Configuration
