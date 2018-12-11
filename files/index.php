@@ -43,7 +43,7 @@ $datetime_format = 'd.m.y H:i';
 // allowed file extensions for upload and rename
 $allowed_extensions = ''; // 'gif,png,jpg'
 // Array of files and folders excluded from listing
-$GLOBALS['exclude_items'] = array();
+$GLOBALS['exclude_items'] = array(index.php);
 // Google Docs Viewer
 $GLOBALS['online_viewer'] = true;
 //Configuration
