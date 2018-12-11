@@ -1,6 +1,6 @@
 <?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true}';
+$CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":false}';
 /**
  * H3K | Tiny File Manager V2.2.0
  * CCP Programmers | ccpprogrammers@gmail.com
@@ -30,7 +30,7 @@ $edit_files = true;
 // Default timezone for date() and time() - http://php.net/manual/en/timezones.php
 $default_timezone = 'Etc/UTC'; // UTC
 // Root path for file manager
-$root_path = $_SERVER['DOCUMENT_ROOT'];
+$root_path = 'files';
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
 $root_url = 'files';
