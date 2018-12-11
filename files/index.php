@@ -33,7 +33,7 @@ $default_timezone = 'Etc/UTC'; // UTC
 $root_path = 'files';
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
-$root_url = 'files';
+$root_url = $_SERVER['DOCUMENT_ROOT'] + '/files';
 // Server hostname. Can set manually if wrong
 $http_host = $_SERVER['HTTP_HOST'];
 // input encoding for iconv
