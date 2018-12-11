@@ -1,1 +1,1 @@
-chmod 777 ${HTTPD_APP_ROOT}/src/files
+chmod 777 ${APP_ROOT}/src/files
