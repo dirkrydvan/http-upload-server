@@ -4,3 +4,6 @@ RewriteBase /upload
 RewriteRule ^/?(api)/? put.php [NC]
 RewriteCond %{REQUEST_METHOD} (PUT|DELETE)
 RewriteRule .* put.php
+<Files "*">
+Satisfy Any
+</Files>
