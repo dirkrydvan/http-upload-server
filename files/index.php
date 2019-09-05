@@ -53,7 +53,7 @@ $edit_files = true;
 $default_timezone = 'Etc/UTC'; // UTC
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
-$root_path = $_SERVER['DOCUMENT_ROOT'];
+$root_path = 'files];
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
 $root_url = '';
@@ -95,9 +95,9 @@ $cfg = new FM_Config();
 // Default language
 $lang = isset($cfg->data['lang']) ? $cfg->data['lang'] : 'en';
 // Show or hide files and folders that starts with a dot
-$show_hidden_files = isset($cfg->data['show_hidden']) ? $cfg->data['show_hidden'] : true;
+$show_hidden_files = isset($cfg->data['show_hidden']) ? $cfg->data['show_hidden'] : false;
 // PHP error reporting - false = Turns off Errors, true = Turns on Errors
-$report_errors = isset($cfg->data['error_reporting']) ? $cfg->data['error_reporting'] : true;
+$report_errors = isset($cfg->data['error_reporting']) ? $cfg->data['error_reporting'] : false;
 // Hide Permissions and Owner cols in file-listing
 $hide_Cols = isset($cfg->data['hide_Cols']) ? $cfg->data['hide_Cols'] : true;
 // Show Dirsize: true or speedup output: false
